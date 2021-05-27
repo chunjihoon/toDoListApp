@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                 },
                 onClickItem = {
                     viewModel.toggleTodo(it)
-                    // 데이타 변경 후 어댑터에 변경사항을 노티
+                    // 데이타 변경 후 어댑터에 변경사항을 노티.
                     binding.recyclerView.adapter?.notifyDataSetChanged()
                 }
             )
